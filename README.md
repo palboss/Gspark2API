@@ -6,5 +6,5 @@
 2. `GS_COOKIE=******`  cookie
 
 
-### Vercel一键部署---推荐
+### Vercel一键部署
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/palboss/Gspark2API)
