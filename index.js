@@ -62,7 +62,7 @@ const makeRequest = async (session_id, requestModel, messages) => {
 }
 
 
-router.post('/hf/v1/chat/completions', async (ctx) => {
+router.post('/v1/chat/completions', async (ctx) => {
   const { messages, stream = false, model = 'claude-3-5-sonnet' } = ctx.request.body
   const session_id = ctx.get('Authorization')?.replace('Bearer ', '')
 
@@ -217,7 +217,7 @@ router.post('/hf/v1/chat/completions', async (ctx) => {
 
 
 // 获取models
-router.get('/hf/v1/models', async (ctx) => {
+router.get('/v1/models', async (ctx) => {
   ctx.body = {
     object: "list",
     data: Object.keys(models).map(model => ({
