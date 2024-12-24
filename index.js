@@ -231,7 +231,7 @@ router.get('/hf/v1/models', async (ctx) => {
 
 router.get('/', (ctx) => {
   ctx.body = {
-    message: "app run",
+    message: "app running",
     status: "success"
   }
 })
